@@ -4,7 +4,10 @@ title: "ADR 0005: テーマとデザイントークン"
 description: "semantic CSS custom propertiesとdata-themeでtheme選択とsite固有調整を行うことを定める。"
 resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0005-theme-and-design-tokens.md"
 tags: [ui, adr, architecture, theme, design-tokens]
-timestamp: 2026-08-10T06:56:15Z
+status: stable
+generated:
+  by: "codex/gpt-5.6-sol"
+  at: 2026-08-10T07:07:01Z
 ---
 
 # ADR 0005: テーマとデザイントークン

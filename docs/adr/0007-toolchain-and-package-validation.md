@@ -4,7 +4,10 @@ title: "ADR 0007: ツールチェーンとパッケージ検証"
 description: "toolchainを固定し、型、public export、render、tarball内容の検査をrelease条件にすることを定める。"
 resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0007-toolchain-and-package-validation.md"
 tags: [ui, adr, architecture, toolchain, package-validation]
-timestamp: 2026-08-10T06:56:15Z
+status: stable
+generated:
+  by: "codex/gpt-5.6-sol"
+  at: 2026-08-10T07:07:01Z
 ---
 
 # ADR 0007: ツールチェーンとパッケージ検証
