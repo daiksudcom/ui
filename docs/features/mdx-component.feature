@@ -1,20 +1,19 @@
-# language: ja
 @ui @mdx @accessibility
-機能: UI コンポーネントを MDX から明示的に利用する
+Feature: UI コンポーネントを MDX から明示的に利用する
   記事の著者として
   依存する表示要素をソースから判別できるように
   使用する Astro コンポーネントを明示的に import したい
 
-  ルール: 各コンポーネントは独立した公開エクスポートと意味的契約を持つ
+  Rule: 各コンポーネントは独立した公開エクスポートと意味的契約を持つ
 
-    シナリオ: MDX がコンポーネントを描画する
-      前提MDX が "@daiksudcom/ui/components/Callout" から Callout を import している
-      もしContent のビルドが MDX をコンパイルする
-      ならばCallout は静的 HTML に描画される
-      かつブラウザーへ見出しと本文の意味的な構造が渡される
-      かつコンポーネントのアクセシビリティ契約が満たされる
+    Scenario: MDX がコンポーネントを描画する
+      Given MDX が "@daiksudcom/ui/components/Callout" から Callout を import している
+      When Content のビルドが MDX をコンパイルする
+      Then Callout は静的 HTML に描画される
+      And ブラウザーへ見出しと本文の意味的な構造が渡される
+      And コンポーネントのアクセシビリティ契約が満たされる
 
-    シナリオ: 公開エクスポート単位で依存を選ぶ
-      前提パッケージが Callout と Figure を個別に公開している
-      もしMDX が Figure だけを明示的に import する
-      ならばMDX の依存関係には Figure の公開エクスポートが現れる
+    Scenario: 公開エクスポート単位で依存を選ぶ
+      Given パッケージが Callout と Figure を個別に公開している
+      When MDX が Figure だけを明示的に import する
+      Then MDX の依存関係には Figure の公開エクスポートが現れる
