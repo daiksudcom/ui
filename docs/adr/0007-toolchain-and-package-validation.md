@@ -1,3 +1,12 @@
+---
+type: "Architecture Decision Record"
+title: "ADR 0007: ツールチェーンとパッケージ検証"
+description: "toolchainを固定し、型、public export、render、tarball内容の検査をrelease条件にすることを定める。"
+resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0007-toolchain-and-package-validation.md"
+tags: [ui, adr, architecture, toolchain, package-validation]
+timestamp: 2026-08-10T06:56:15Z
+---
+
 # ADR 0007: ツールチェーンとパッケージ検証
 
 ## ステータス

@@ -1,3 +1,12 @@
+---
+type: "Documentation Index"
+title: "文書"
+description: "UI packageの受け入れ基準となる振る舞い仕様と技術判断への入口を提供する。"
+resource: "https://github.com/daiksudcom/ui/blob/main/docs/README.md"
+tags: [ui, documentation, index]
+timestamp: 2026-08-10T06:56:15Z
+---
+
 # 文書
 
 このディレクトリは `@daiksudcom/ui` の受け入れ基準と、実装を拘束する技術判断を管理します。
