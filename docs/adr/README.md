@@ -1,3 +1,12 @@
+---
+type: "Architecture Decision Record Index"
+title: "Architecture Decision Records"
+description: "UI packageの責務、配布、versioning、theme、公開export、validationに関する設計判断への索引である。"
+resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/README.md"
+tags: [ui, adr, architecture, index]
+timestamp: 2026-08-10T06:56:15Z
+---
+
 # Architecture Decision Records
 
 | 番号 | 決定 | ステータス | 日付 |

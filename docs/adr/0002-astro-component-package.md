@@ -1,3 +1,12 @@
+---
+type: "Architecture Decision Record"
+title: "ADR 0002: Astro コンポーネントパッケージ"
+description: "公開UIを型情報とCSSを含むAstro componentとして実装し、意味的な静的HTMLを生成することを定める。"
+resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0002-astro-component-package.md"
+tags: [ui, adr, architecture, astro-component-package]
+timestamp: 2026-08-10T06:56:15Z
+---
+
 # ADR 0002: Astro コンポーネントパッケージ
 
 ## ステータス
