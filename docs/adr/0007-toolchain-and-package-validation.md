@@ -1,13 +1,13 @@
 ---
 type: "Architecture Decision Record"
 title: "ADR 0007: ツールチェーンとパッケージ検証"
-description: "toolchainを固定し、型、public export、render、tarball内容の検査をrelease条件にすることを定める。"
+description: "toolchainを固定し、package単体の検証をrelease条件にすることを定める。"
 resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0007-toolchain-and-package-validation.md"
 tags: [ui, adr, architecture, toolchain, package-validation]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-10T07:07:01Z
+  at: 2026-08-11T21:36:04Z
 ---
 
 # ADR 0007: ツールチェーンとパッケージ検証
@@ -26,7 +26,7 @@ generated:
 
 ## 決定
 
-Node.js 24、pnpm 11、Astro 7、Vite+ を標準ツールチェーンとする。採用するパッチ版はマニフェストと lockfile へ正確に固定する。Cloudflare consumer の互換スモークテストには Wrangler `4.107.0` を固定する。Astro 型検査、public export 検査、意味的な render 検査、package tarball 内容検査をリリース条件とする。ツール実装は Web 標準 API を基準にする。
+Node.js 24、pnpm 11、Astro 7、Vite+ を標準ツールチェーンとする。採用するパッチ版はマニフェストと lockfile へ正確に固定する。Cloudflare consumer の互換スモークテストには Wrangler `4.107.0` を固定する。公開は package 単体の検証を通過した成果物に限定し、現在の検証項目と公開結果は関連する振る舞い仕様を正本とする。ツール実装は Web 標準 API を基準にする。
 
 ## 検討した選択肢
 
@@ -36,7 +36,7 @@ Node.js 24、pnpm 11、Astro 7、Vite+ を標準ツールチェーンとする�
 
 ## 結果
 
-同じソースから同じ package 内容を生成でき、破損した export や不足ファイルを公開前に検出できる。依存更新は意図した変更としてレビューされる。
+同じソースから同じ package 内容を生成でき、公開前に契約違反を検出できる。依存更新と検証基準の変更は意図した変更としてレビューされる。
 
 ## 関連文書
 
