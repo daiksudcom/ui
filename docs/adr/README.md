@@ -7,7 +7,7 @@ tags: [ui, adr, architecture, index]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-10T07:07:01Z
+  at: 2026-08-11T21:36:04Z
 ---
 
 # Architecture Decision Records
@@ -22,4 +22,4 @@ generated:
 | 0006 | [MDX 向け明示エクスポート](0006-explicit-mdx-component-exports.md) | 承認済み | 2026-08-10 |
 | 0007 | [ツールチェーンとパッケージ検証](0007-toolchain-and-package-validation.md) | 承認済み | 2026-08-10 |
 
-各 ADR は採用した決定を記録します。変更が必要になった場合は、新しい ADR で置き換え関係を明示します。
+各 ADR は採用した判断の背景、選択肢、トレードオフ、結果を記録します。現在の公開名、バージョン、入出力、エラー条件などの検証可能な契約は関連する振る舞い仕様を正本とし、ADR では繰り返しません。判断を変更する場合は、新しい ADR で置き換え関係を明示します。

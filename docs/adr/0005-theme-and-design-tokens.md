@@ -7,7 +7,7 @@ tags: [ui, adr, architecture, theme, design-tokens]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-10T07:07:01Z
+  at: 2026-08-11T21:36:04Z
 ---
 
 # ADR 0005: テーマとデザイントークン
@@ -22,11 +22,11 @@ generated:
 
 ## コンテキスト
 
-Home と Blog は視覚的一貫性を共有しつつ、system、light、dark の表示とサイト固有の調整を提供する必要がある。
+Home と Blog は視覚的一貫性を共有しつつ、利用者環境に応じた複数の配色とサイト固有の調整を提供する必要がある。
 
 ## 決定
 
-色、文字、余白、境界、focus、motion を意味ベースの CSS custom properties として公開する。consumer はルートの `data-theme` で `system`、`light`、`dark` を選択し、公開 token の上書きで調整する。
+意味ベースの CSS custom properties をテーマの公開境界とし、ルート要素の data 属性でテーマを選択する。サイト固有の調整は公開 token の上書きに限定する。対応するテーマ値、アクセシビリティ条件、上書き結果は関連する振る舞い仕様を正本とする。
 
 ## 検討した選択肢
 
@@ -36,7 +36,7 @@ Home と Blog は視覚的一貫性を共有しつつ、system、light、dark �
 
 ## 結果
 
-テーマ選択とブランド調整がコンポーネント実装から分離される。コントラスト、focus、reduced motion は token 契約の受け入れ基準になる。
+テーマ選択とブランド調整がコンポーネント実装から分離される。公開 token の互換性を維持する責務が生じる。
 
 ## 関連文書
 
