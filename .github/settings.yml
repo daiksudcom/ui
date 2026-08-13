@@ -48,11 +48,8 @@ spec:
     - name: refactor
       description: Refactoring without observable behavior change (no version bump)
       color: 8ec9cc
-    - name: release
-      description: Package release or rollback operation (no independent version impact)
-      color: 5319e7
     - name: revert
-      description: Revert of a released change (PATCH)
+      description: Reverts previously released behavior (PATCH)
       color: 79b8ff
     - name: style
       description: Style-only source change (no version bump)

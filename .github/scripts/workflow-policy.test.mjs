@@ -143,7 +143,6 @@ test('repository reconciliation is additive and release notes keep the category 
     '🚀 Features',
     '🐛 Bug Fixes',
     '⏪ Reverts',
-    '🚢 Release Operations',
     '📝 Documentation',
     '🧹 Maintenance',
     '🔧 Other Changes',
