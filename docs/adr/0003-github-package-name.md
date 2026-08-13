@@ -26,7 +26,7 @@ generated:
 
 ## 決定
 
-パッケージ名を `@daiksudme/ui` とし、`daiksudme/ui` を配布元として GitHub Packages に provenance 付きで公開する。
+パッケージ名を `@daiksudme/ui` とし、`daiksudme/ui` を配布元として GitHub Packages に公開する。package tarballにはGitHub artifact attestationを発行し、source repository、workflow、commit、digestを検証可能にする。
 
 ## 検討した選択肢
 
@@ -36,7 +36,7 @@ generated:
 
 ## 結果
 
-パッケージの所有者、ソース、成果物を一つの GitHub 組織で追跡できる。consumer は認証済み registry と厳密なバージョンで取得する。
+パッケージの所有者、ソース、成果物を一つの GitHub 組織で追跡できる。consumer は認証済み registry と厳密なバージョンで取得し、GitHub CLIでartifact attestationを検証できる。GitHub Packagesのnpm registryが提供しないnpm provenance表現とは区別して扱う。
 
 ## 関連文書
 
