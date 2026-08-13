@@ -2,12 +2,12 @@
 type: "Architecture Decision Record"
 title: "ADR 0004: SemVer と consumer ごとの厳密なバージョン"
 description: "UI packageをSemVerで公開し、HomeとBlogが検証済みの厳密なversionを個別に固定することを定める。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0004-semver-and-exact-consumer-versions.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0004-semver-and-exact-consumer-versions.md"
 tags: [ui, adr, architecture, semver, exact-consumer-versions]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-10T07:07:01Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0004: SemVer と consumer ごとの厳密なバージョン
@@ -26,7 +26,7 @@ Home と Blog は独立した変更・ビルド・デプロイ単位であり、
 
 ## 決定
 
-`@daiksudcom/ui` は SemVer で公開する。Home と Blog は範囲指定ではなく厳密なバージョンを記録し、それぞれの受け入れ検証を経て個別に更新する。公開済み成果物は不変とする。
+`@daiksudme/ui` は SemVer で公開する。Home と Blog は範囲指定ではなく厳密なバージョンを記録し、それぞれの受け入れ検証を経て個別に更新する。公開済み成果物は不変とする。
 
 ## 検討した選択肢
 

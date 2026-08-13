@@ -1,6 +1,6 @@
-# @daiksudcom/ui
+# @daiksudme/ui
 
-`@daiksudcom/ui` は、Home と Blog が利用する Astro コンポーネント、CSS、デザイントークンの公開契約を定義するリポジトリです。
+`@daiksudme/ui` は、Home と Blog が利用する Astro コンポーネント、CSS、デザイントークンの公開契約を定義するリポジトリです。
 
 ## 現在の状態
 
@@ -69,6 +69,6 @@ printf '%s\n' 'chore(tooling): verify commit policy' | pnpm lint:commit
 
 ## 関連リポジトリ
 
-- [Home](https://github.com/daiksudcom/home)
-- [Blog](https://github.com/daiksudcom/blog)
-- [Content](https://github.com/daiksudcom/content)
+- [Home](https://github.com/daiksudme/home)
+- [Blog](https://github.com/daiksudme/blog)
+- [Content](https://github.com/daiksudme/content)

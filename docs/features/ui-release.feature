@@ -9,7 +9,7 @@ Feature: 検証済み UI パッケージをリリースする
     Scenario: 検証を通過したバージョンを公開する
       Given 変更内容に対応する SemVer が選択されている
       When Astro 型検査、公開エクスポート検査、意味的描画検査、tarball 内容検査が成功する
-      Then "@daiksudcom/ui" は GitHub Packages に provenance 付きで公開される
+      Then "@daiksudme/ui" は GitHub Packages に provenance 付きで公開される
       And 公開済みバージョンの成果物は不変である
 
     Scenario: consumer が明示的に更新する

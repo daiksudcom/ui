@@ -2,12 +2,12 @@
 type: "Architecture Decision Record"
 title: "ADR 0001: UI のリポジトリ境界"
 description: "Astro component、CSS、design tokenをUI repositoryが所有し、独立packageとして配布することを定める。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0001-repository-boundary.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0001-repository-boundary.md"
 tags: [ui, adr, architecture, repository-boundary]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-11T21:36:04Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0001: UI のリポジトリ境界
@@ -43,5 +43,5 @@ UI の変更履歴と互換性がサイトのデプロイから分離される�
 - [パッケージ利用仕様](../features/package-consumption.feature)
 - [ADR 0003](0003-github-package-name.md)
 - [ADR 0004](0004-semver-and-exact-consumer-versions.md)
-- [Home](https://github.com/daiksudcom/home)
-- [Blog](https://github.com/daiksudcom/blog)
+- [Home](https://github.com/daiksudme/home)
+- [Blog](https://github.com/daiksudme/blog)

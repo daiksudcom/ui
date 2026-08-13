@@ -2,12 +2,12 @@
 type: "Architecture Decision Record"
 title: "ADR 0006: MDX 向け明示エクスポート"
 description: "MDXで使うAstro componentへ安定した個別public exportを設け、記事側で明示importすることを定める。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0006-explicit-mdx-component-exports.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0006-explicit-mdx-component-exports.md"
 tags: [ui, adr, architecture, mdx, component-exports]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-10T07:07:01Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0006: MDX 向け明示エクスポート
@@ -41,4 +41,4 @@ MDX で利用可能な各 Astro コンポーネントに安定した個別の pu
 ## 関連文書
 
 - [MDX コンポーネント仕様](../features/mdx-component.feature)
-- [Content](https://github.com/daiksudcom/content)
+- [Content](https://github.com/daiksudme/content)

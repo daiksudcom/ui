@@ -2,12 +2,12 @@
 type: "Architecture Decision Record"
 title: "ADR 0005: テーマとデザイントークン"
 description: "semantic CSS custom propertiesとdata-themeでtheme選択とsite固有調整を行うことを定める。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0005-theme-and-design-tokens.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0005-theme-and-design-tokens.md"
 tags: [ui, adr, architecture, theme, design-tokens]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-11T21:36:04Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0005: テーマとデザイントークン

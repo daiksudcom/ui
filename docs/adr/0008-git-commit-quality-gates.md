@@ -2,12 +2,12 @@
 type: "Architecture Decision Record"
 title: "ADR 0008: Git コミット品質ゲート"
 description: "Conventional Commits、Git hook、CIによってコミットとPull Requestの品質を検証する。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0008-git-commit-quality-gates.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0008-git-commit-quality-gates.md"
 tags: [ui, adr, architecture, git, quality-gate]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-12T22:52:24Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0008: Git コミット品質ゲート

@@ -2,12 +2,12 @@
 type: "Architecture Decision Record Index"
 title: "Architecture Decision Records"
 description: "UI packageの責務、配布、versioning、theme、公開export、validation、Git品質ゲートに関する設計判断への索引である。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/README.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/README.md"
 tags: [ui, adr, architecture, index]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-12T22:52:24Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # Architecture Decision Records
