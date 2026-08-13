@@ -11,7 +11,14 @@ Feature: UI パッケージを独立したバージョンで利用する
       When 利用者が "@daiksudme/ui@2.3.1" を導入する
       Then Astro コンポーネントの型付き公開エクスポートを利用できる
       And CSS エントリーポイントを利用できる
-      And パッケージの provenance から公開元とビルドを検証できる
+      And tarball の GitHub artifact attestation から公開元とビルドを検証できる
+
+    Scenario: 公開バージョンを tag と GitHub Release から確認する
+      Given GitHub Packages に "@daiksudme/ui" のバージョン "2.3.1" が公開されている
+      When 利用者が公開の出所を確認する
+      Then annotated tag "v2.3.1" が公開元の revision を指している
+      And 同じ tag の GitHub Release が tarball と SHA-512 integrity を提供する
+      And build 識別子付きの tag は公開バージョンを持たない
 
     Scenario: Home と Blog が異なるバージョンを選択する
       Given Home は "@daiksudme/ui@2.3.1" を厳密に指定している

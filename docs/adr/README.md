@@ -22,5 +22,6 @@ generated:
 | 0006 | [MDX 向け明示エクスポート](0006-explicit-mdx-component-exports.md) | 承認済み | 2026-08-10 |
 | 0007 | [ツールチェーンとパッケージ検証](0007-toolchain-and-package-validation.md) | 承認済み | 2026-08-10 |
 | 0008 | [Git コミット品質ゲート](0008-git-commit-quality-gates.md) | 承認済み | 2026-08-13 |
+| 0009 | [Labeler と package release](0009-labeler-and-package-release.md) | 承認済み | 2026-08-13 |
 
 各 ADR は採用した判断の背景、選択肢、トレードオフ、結果を記録します。現在の公開名、バージョン、入出力、エラー条件などの検証可能な契約は関連する振る舞い仕様を正本とし、ADR では繰り返しません。実装へ採用する前の判断は既存ADRを改訂でき、実装後に判断を変更する場合は新しいADRで置き換え関係を明示します。
