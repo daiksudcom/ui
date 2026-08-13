@@ -2,12 +2,12 @@
 type: "Gherkin Specification Index"
 title: "振る舞い仕様"
 description: "package利用、MDX component、theme、UI releaseのGherkin仕様への索引である。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/features/README.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/features/README.md"
 tags: [ui, gherkin, specification, index]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-11T21:36:04Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # 振る舞い仕様

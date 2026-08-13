@@ -1,13 +1,13 @@
 ---
 type: "Architecture Decision Record"
 title: "ADR 0003: GitHub Packages のパッケージ名"
-description: "共有UIをdaiksudcom scopeのUI packageとして命名し、GitHub Packagesへ公開することを定める。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0003-github-package-name.md"
+description: "共有UIをdaiksudme scopeのUI packageとして命名し、GitHub Packagesへ公開することを定める。"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0003-github-package-name.md"
 tags: [ui, adr, architecture, github-packages, package-name]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-10T07:07:01Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0003: GitHub Packages のパッケージ名
@@ -26,7 +26,7 @@ generated:
 
 ## 決定
 
-パッケージ名を `@daiksudcom/ui` とし、`daiksudcom/ui` を配布元として GitHub Packages に provenance 付きで公開する。
+パッケージ名を `@daiksudme/ui` とし、`daiksudme/ui` を配布元として GitHub Packages に provenance 付きで公開する。
 
 ## 検討した選択肢
 

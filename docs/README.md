@@ -2,17 +2,17 @@
 type: "Documentation Index"
 title: "文書"
 description: "UI packageの受け入れ基準となる振る舞い仕様と技術判断への入口を提供する。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/README.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/README.md"
 tags: [ui, documentation, index]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-11T21:36:04Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # 文書
 
-このディレクトリは `@daiksudcom/ui` の受け入れ基準と、実装を拘束する技術判断を管理します。
+このディレクトリは `@daiksudme/ui` の受け入れ基準と、実装を拘束する技術判断を管理します。
 
 ## 文書の責務
 

@@ -7,7 +7,7 @@ Feature: UI コンポーネントを MDX から明示的に利用する
   Rule: 各コンポーネントは独立した公開エクスポートと意味的契約を持つ
 
     Scenario: MDX がコンポーネントを描画する
-      Given MDX が "@daiksudcom/ui/components/Callout" から Callout を import している
+      Given MDX が "@daiksudme/ui/components/Callout" から Callout を import している
       When Content のビルドが MDX をコンパイルする
       Then Callout は静的 HTML に描画される
       And ブラウザーへ見出しと本文の意味的な構造が渡される

@@ -2,12 +2,12 @@
 type: "Architecture Decision Record"
 title: "ADR 0007: ツールチェーンとパッケージ検証"
 description: "Node.js、pnpm、Astroと品質ツールを固定し、package単体の検証をrelease条件にすることを定める。"
-resource: "https://github.com/daiksudcom/ui/blob/main/docs/adr/0007-toolchain-and-package-validation.md"
+resource: "https://github.com/daiksudme/ui/blob/main/docs/adr/0007-toolchain-and-package-validation.md"
 tags: [ui, adr, architecture, toolchain, package-validation]
 status: stable
 generated:
   by: "codex/gpt-5.6-sol"
-  at: 2026-08-12T13:45:32Z
+  at: 2026-08-13T00:35:00Z
 ---
 
 # ADR 0007: ツールチェーンとパッケージ検証
@@ -42,5 +42,5 @@ Node.js 24.16.0 以降、pnpm 11、Astro 7を標準ツールチェーンとし�
 ## 関連文書
 
 - [UI リリース仕様](../features/ui-release.feature)
-- [Home](https://github.com/daiksudcom/home)
-- [Blog](https://github.com/daiksudcom/blog)
+- [Home](https://github.com/daiksudme/home)
+- [Blog](https://github.com/daiksudme/blog)
