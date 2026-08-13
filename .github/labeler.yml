@@ -1,0 +1,61 @@
+# Version-affecting labels come only from the pull request head branch. Paths
+# must never introduce a SemVer impact that the author did not select.
+'BREAKING CHANGE':
+  - head-branch: ['^breaking-change/(?:feat|perf|fix)/']
+
+DEPRECATED:
+  - head-branch: ['^deprecated/(?:feat|perf|fix)/']
+
+feat:
+  - head-branch: ['^(?:(?:breaking-change|deprecated)/)?feat/']
+
+perf:
+  - head-branch: ['^(?:(?:breaking-change|deprecated)/)?perf/']
+
+fix:
+  - head-branch: ['^(?:(?:breaking-change|deprecated)/)?fix/']
+
+revert:
+  - head-branch: ['^(?:revert|rollback/v[0-9]+\.[0-9]+\.[0-9]+)/']
+
+release:
+  - head-branch: ['^(?:release|rollback)/v[0-9]+\.[0-9]+\.[0-9]+/']
+
+# Non-version labels may additionally describe an all-files path match. Each
+# only-rule uses one combined glob because any-glob-to-all-files does not treat
+# separate entries as a union in every labeler configuration.
+docs:
+  - any:
+      - head-branch: ['^docs/']
+      - changed-files:
+          - any-glob-to-all-files: ['**/*.{md,mdx}']
+
+refactor:
+  - head-branch: ['^refactor/']
+
+style:
+  - head-branch: ['^style/']
+
+test:
+  - any:
+      - head-branch: ['^test/']
+      - changed-files:
+          - any-glob-to-all-files: ['{test,tests}/**']
+
+build:
+  - any:
+      - head-branch: ['^build/']
+      - changed-files:
+          - any-glob-to-all-files:
+              ['{package.json,pnpm-lock.yaml,pnpm-workspace.yaml,astro.config.*,tsconfig.json}']
+
+ci:
+  - any:
+      - head-branch: ['^ci/']
+      - changed-files:
+          - any-glob-to-all-files: ['.github/{workflows,scripts}/**']
+
+chore:
+  - any:
+      - head-branch: ['^(?:chore|release/v[0-9]+\.[0-9]+\.[0-9]+)/']
+      - head-branch: ['^rollback/v[0-9]+\.[0-9]+\.[0-9]+/']

@@ -1,0 +1,140 @@
+apiVersion: gh-infra/v1
+kind: Repository
+metadata:
+  name: ui
+  owner: daiksudme
+
+# Additive reconciliation intentionally preserves GitHub's default labels and
+# any rulesets managed outside this repository. Review `gh infra plan` before
+# every manual apply.
+reconcile:
+  labels: additive
+  rulesets: additive
+
+spec:
+  description: Specifications for @daiksudme/ui Astro components
+  topics: [adr, astro, design-system, gherkin, github-packages, specification]
+  visibility: public
+  archived: false
+
+  labels:
+    - name: BREAKING CHANGE
+      description: Backward-incompatible public API change (MAJOR; MINOR under 0.y.z)
+      color: b60205
+    - name: DEPRECATED
+      description: Public API marked for future removal (MINOR)
+      color: fbca04
+    - name: build
+      description: Build system or dependency change (no version bump)
+      color: a8aeb4
+    - name: chore
+      description: Maintenance outside product code (no version bump)
+      color: ededed
+    - name: ci
+      description: CI configuration or automation change (no version bump)
+      color: cfd3d7
+    - name: docs
+      description: Documentation-only change (no version bump)
+      color: c4b5e0
+    - name: feat
+      description: New public capability (MINOR)
+      color: 0e8a16
+    - name: fix
+      description: Bug fix (PATCH)
+      color: 0052cc
+    - name: perf
+      description: Performance improvement (MINOR)
+      color: 7fd18a
+    - name: refactor
+      description: Refactoring without observable behavior change (no version bump)
+      color: 8ec9cc
+    - name: release
+      description: Package release or rollback operation (no independent version impact)
+      color: 5319e7
+    - name: revert
+      description: Revert of a released change (PATCH)
+      color: 79b8ff
+    - name: style
+      description: Style-only source change (no version bump)
+      color: b5dcde
+    - name: test
+      description: Test-only change (no version bump)
+      color: d8ecec
+
+  features:
+    issues: true
+    projects: true
+    wiki: false
+    discussions: false
+    pull_requests: true
+
+  merge_strategy:
+    allow_merge_commit: false
+    allow_squash_merge: true
+    allow_rebase_merge: false
+    allow_auto_merge: true
+    auto_delete_head_branches: true
+    squash_merge_commit_title: PR_TITLE
+    squash_merge_commit_message: COMMIT_MESSAGES
+    merge_commit_title: MERGE_MESSAGE
+    merge_commit_message: PR_TITLE
+
+  release_immutability: true
+
+  security:
+    vulnerability_alerts: true
+    automated_security_fixes: true
+    private_vulnerability_reporting: true
+
+  rulesets:
+    # gh-infra does not yet model the merge-queue rule. Enable it manually in
+    # GitHub after both required checks have appeared; both workflows handle
+    # the merge_group event.
+    - name: protect-main
+      target: branch
+      enforcement: active
+      conditions:
+        ref_name:
+          include: [~DEFAULT_BRANCH]
+      rules:
+        pull_request:
+          required_approving_review_count: 0
+          dismiss_stale_reviews_on_push: false
+          require_code_owner_review: false
+          require_last_push_approval: false
+          required_review_thread_resolution: true
+        required_status_checks:
+          strict_required_status_checks_policy: false
+          contexts:
+            - context: CI success
+              app: github-actions
+            - context: Policy success
+              app: github-actions
+        non_fast_forward: true
+        deletion: true
+        creation: false
+        required_linear_history: false
+        required_signatures: true
+    - name: protect-release-tags
+      target: tag
+      enforcement: active
+      bypass_actors:
+        - app: github-actions
+          bypass_mode: always
+      conditions:
+        ref_name:
+          include: ['refs/tags/v*']
+      rules:
+        non_fast_forward: true
+        deletion: true
+        creation: true
+        required_linear_history: false
+        required_signatures: false
+
+  actions:
+    enabled: true
+    allowed_actions: all
+    sha_pinning_required: true
+    workflow_permissions: read
+    can_approve_pull_requests: false
+    fork_pr_approval: first_time_contributors
